@@ -15,6 +15,7 @@
     --sherpa-blue:#00474b;
     --topaz:#26c2ae;
     --bettle-green:#547878;
+    --regent-green:#7f9d9f;
 }
 
 body {
@@ -112,5 +113,47 @@ main {
         
     }
 }
+
+}
+
+.results {
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 4rem 2.4rem 2.4rem;
+
+    .amount,
+    .total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:2.4rem ;
+        align-items: center;
+
+        p{
+            color: var(--white);
+            font-weight: 700;
+
+            span {
+                color: var(--regent-green)
+                font-size: 1.3rem;
+            }
+        }
+
+        strong {
+            font-size: 3.2rem;
+            color: var(--topaz);
+
+        }
+    }
+
+    button {
+        background: var(--topaz);
+        color: var(--sherpa-blue);
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        border: none;
+        border-radius: .5rem;
+        font-weight: 700;
+    }
 
 }
