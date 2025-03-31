@@ -10,6 +10,9 @@
     font-size: 62.5%;
     --bg-body:#c5e4e7;
     --bg-main:#FFF;
+    --strong-text: #5e7a7d;
+    --bg-div:#f3f9fa;
+    --input-text:#00474b;
 }
 
 body {
@@ -26,6 +29,34 @@ header {
 main {
   background-color: var(--bg-main); 
   padding: 3.2rem 2.4rem;
+  border-radius: 2.5 rem 3.5 rem 0 0;
+}
 
+.info strong {
+    color: var(--strong-text);
 
+}
+
+.input box {
+    margin-top: .6rem;
+    background: var(--bg-div);
+    padding: .6 rem 1.8rem;
+    align-items: center;
+    border-radius: .5rem;
+
+    input{
+        border: none;
+        background: transparent;
+        text-align: right;
+        width: 100%;
+        outline: none;
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--input-text);
+
+        color: var(--input-text);
+        &::placeholder  {
+            opacity: 0.35rem;
+        }
+    }
 }
