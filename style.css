@@ -81,9 +81,8 @@
            outline: 2px solid var(--topaz);
        }
  
-       .tip { 
-         div {
-             display: grid;
+       .tip div {
+           display: grid;
            grid-template-columns: repeat(2, 1fr);
            gap: 1.6rem;
            margin-top: .8rem;
@@ -96,12 +95,6 @@
                border-radius: .5rem;
                padding-block: .6rem;
                background: var(--sherpa-blue);
-           }
- 
-           .button-selected{
-              background: var(--topaz) ;
-           .button-selected {
-             background: var(--water-leaf);
            }
  
            input {
@@ -124,13 +117,13 @@
            }
        }
    }
-  }
  
    .results{
       background: var(--sherpa-blue);
       border-radius: 1.5rem;
       padding: 4rem 2.4rem 2.4rem;
- 
+      
+  
       .amount,
       .total {
           display: flex;
@@ -166,13 +159,7 @@
           padding-block: .9rem;
       }
    }
- 
-   input::-webkit-inner-spin-button,
-   input::-webkit-outer-spin-button{
-          display: none;
- 
-   }
- 
+  
    @media(min-width: 920px ){
       main{
           display: flex;
@@ -182,41 +169,49 @@
           gap: 4.8rem;
           padding: 4.8rem;
       }
- 
+  
       section {
           width: 100%;
       }
- 
+      
+      input::-webkit-inner-spin-button,
+      input::-webkit-outer-spin-button{
+          display: none;
+  
+      }
+      
       .info {
-         .tip {
-             div {
-                 grid-template-columns: repeat(3, 1fr);
- 
-                 button:hover{
-                 background: var(--water-leaf);
-                 cursor: pointer;
-                 transition: .3s;
-                 }
-             }
-         }
-     }
- 
-     .results{
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         padding: 5.6rem 4rem 4rem;
- 
-         .amount,
-         .total{
-             strong{
-                 font-size: 4.8rem;
-             }
-         }
- 
-         button:hover{
-             background: var(--water-leaf);
-             transition: .3s;
-             cursor: pointer;
-         }
-     }
+          .tip {
+              div {
+                  grid-template-columns: repeat(3, 1fr);
+  
+                  button:hover{
+                      background: var(--topaz);
+                      cursor: pointer;
+                      transition: .3s;
+                  }
+              }
+          }
+      }
+  
+      .results{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 5.6rem 4rem 4rem;
+  
+          .amount,
+          .total{
+              strong{
+                  font-size: 4.8rem;
+              }
+          }
+  
+          button:hover{
+              background: var(--water-leaf);
+              transition: .3s;
+              cursor: pointer;
+          }
+      }
+  
+   }
