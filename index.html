@@ -1,89 +1,84 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>Tip Calculator</title>
- 
-  </head>
-  <body>
-      <header>
-          <img src="./images/logo.svg" alt="splitter calculator logo">
-      </header>
- 
-      <main>
-          <section class="info">
-              <div class="bill">
-                  <strong>Bill</strong>
- 
-                  <div class="input-box">
-                      <img src="./images/icon-dollar.svg" alt="icon dollar" >
- 
-                      <input type="number" id="bill" placeholder="0">
-                  </div>
- 
-              </div>
- 
-              <div class="tip">
-                  <strong>Select tip</strong>
- 
-                  <div>
-                      <button>5%</button>
-                      <button>10%</button>
-                      <button>15%</button>
-                      <button>25%</button>
-                      <button>50%</button>
-                      <input type="number" id="custom-tip" placeholder="Custom">
-                  </div>
-              </div>
- 
-              <div class="people">
-                  <strong>Number of People</strong>
- 
-                  <div class="input-box">
-                      <img src="./images/icon-person.svg" alt="icon person">
- 
-                      <input type="number" id="people" placeholder="0">
-                  </div>
-              </div>
-          </section>
- 
-          <section class="results">
-              <div class="amount">
-                  <p>
-                      Tip Amount <br> <span>/ person</span>
-                  </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="Logo do Splitter">
+  </header>
+
+  <main>
+   <section class="iformacoes">
+    <form action="">
+      <div class="conta">
+        <label for="conta">Conta</label>
+        <div>
+          <img src="./images/icon-dollar.svg" alt="Ícone do cifrão">
+          <input type="number" name="conta" id="conta" placeholder="0">
+        </div>
+      </div>
+
+
+
+      <div class="gorjeta">
+        <label for="outra">Selecione a gorjeta %</label>
+
+
+        <div>
+          <input type="button" value="5%" >
+          <input type="button" value="10%">
+          <input type="button" value="15%">
+          <input type="button" value="25%">
+          <input type="button" value="50%">
+          <input type="number" name="outra" id="outra" placeholder="Outra">
+        </div>
+      </div>
+
+      <div class="pessoas">
+       <div class="textos">
+        <label for="pessoas">Quantidade de Pessoas</label>
+        <p id="erro">Não pode ser zero</p>
+       </div>
+        <div class="input-box erro">
+          <img src="./images/icon-person.svg" alt="Ícone da pessoa">
+          <input x type="number" name="pessoas" id="pessoas" placeholder="0">
+
+      </div>
+    </form>
+   </section>
+
+   <section class="resultados">
+
+    <div>
+      <div class="gorjeta-total">
+        <p>
+          <strong>Gorjeta</strong> <br>
+          / pessoas
+        </p>
   
-                  <strong>$4.27</strong>
-              </div>
+        <strong>R$ 0.00</strong>
+      </div>
   
-              <div class="total">
-                  <p>
-                      Total <br> <span>/ person</span>
-                  </p>
+      <div class="total">
+        <p>
+          <strong>Total</strong> <br>
+          / pessoas
+        </p>
   
-                  <strong>$32.79</strong>
-              </div>
-             <div>
-                 <div class="amount">
-                     <p>
-                         Tip Amount <br> <span>/ person</span>
-                     </p>
-     
-                     <strong>$4.27</strong>
-                 </div>
-     
-                 <div class="total">
-                     <p>
-                         Total <br> <span>/ person</span>
-                     </p>
-     
-                     <strong>$32.79</strong>
-                 </div>
-             </div>
- 
-              <button>Reset</button>
-          </section>
- 
-      </main>
+        <strong>R$ 0.00</strong>
+      </div>
+    </div>
+  <button>Limpar</button>
+  </section>
+  </main>
+    
+</body>
+</html>
